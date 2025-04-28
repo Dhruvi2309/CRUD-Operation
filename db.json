@@ -1,0 +1,34 @@
+{
+  "students": [
+    {
+      "id": "1",
+      "name": "Dhruvi",
+      "place": "Surat",
+      "phoneno": "7984812338"
+    },
+    {
+      "id": "2",
+      "name": "Aarav",
+      "place": "Ahmedabad",
+      "phoneno": "9876543210"
+    },
+    {
+      "id": "12",
+      "name": "Mansi",
+      "place": "Vadodra",
+      "phoneno": "7896541236"
+    },
+    {
+      "id": "13",
+      "name": "gracy",
+      "place": "Surat",
+      "phoneno": "1234567848"
+    },
+    {
+      "id": "14",
+      "name": "Boni",
+      "place": "Mumbai",
+      "phoneno": "7958698559"
+    }
+  ]
+}
