@@ -40,7 +40,7 @@ function StudentTable() {
     <div className="container">
       <h2 align="center">Student Record</h2>
       <div className="table-container">
-        <Link to="/student/create" align='center'>Add New Student</Link>
+        <Link to="/student/create" align="center">Add New Student</Link>
         <table align="center" cellPadding={10} cellSpacing={10} border={10}>
           <thead>
             <tr>

@@ -50,7 +50,7 @@ const handleSubmit = (e) => {
   }
   return (
     <div className="container">
-    <h2>Update  Student</h2>
+    <h2>Update Student</h2>
     <form onSubmit={handleSubmit}>
 
         <div className="mb-3" >
@@ -82,4 +82,4 @@ const handleSubmit = (e) => {
   )
 }
 
-export default EditStudent
+export default EditStudent;
