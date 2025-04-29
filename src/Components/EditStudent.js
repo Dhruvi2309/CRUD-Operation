@@ -13,7 +13,7 @@ function EditStudent() {
   // const [studentData, setStudentData] = useState({});
 
 useEffect(() => {
-  fetch("http://localhost:8000/students/" + studentid)
+  fetch("http://localhost:8005/students/" + studentid)
     .then((res) => res.json())
     .then((data) => {
             setId(data.id);
@@ -35,7 +35,7 @@ const handleSubmit = (e) => {
       const studentData = { id, name, place, phoneno };
       console.log(studentData);
       
-      fetch('http://localhost:8000/students/' + studentid, {
+      fetch('http://localhost:8005/students/' + studentid, {
           method: 'PUT', 
           headers: {
               "Content-Type": "application/json"
@@ -70,7 +70,7 @@ const handleSubmit = (e) => {
 
         <div className="mb-3">
         <label htmlFor="pno" className="form-label">Phone no:</label>
-        <input type="text" className="form-control" name="pno" value={phoneno} onChange={e => setPhoneno(e.target.value)}onMouseDown={() =>setValidation(true)}/>
+        <input type="number" className="form-control" name="pno" value={phoneno} onChange={e => setPhoneno(e.target.value)}onMouseDown={() =>setValidation(true)}/>
         </div>
 
         <div>

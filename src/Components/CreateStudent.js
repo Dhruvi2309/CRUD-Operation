@@ -20,7 +20,7 @@ function CreateStudent() {
         const studentData = { id, name, place, phoneno };
         console.log(studentData);
         
-        fetch('http://localhost:8000/students', {
+        fetch('http://localhost:8005/students', {
             method: 'POST', 
             headers: {
                 "Content-Type": "application/json"

@@ -17,7 +17,7 @@ function StudentTable() {
 
    const DeleteDetails=(id) => {
     if(window.confirm("Are you sure deleted ?")){
-      fetch('http://localhost:8000/students/' + id, {
+      fetch('http://localhost:8005/students/' + id, {
         method: 'DELETE', 
     })
     .then((res) => {
@@ -29,7 +29,7 @@ function StudentTable() {
    }
 
   useEffect(() => {
-    fetch('http://localhost:8000/students')
+    fetch('http://localhost:8005/students')
       .then((res) => res.json())
       .then((data) => setStudents(data))
       .catch((err) => console.log(err.message));

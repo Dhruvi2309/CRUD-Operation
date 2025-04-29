@@ -7,7 +7,7 @@ function ViewDetails() {
   const [studentData, setStudentData] = useState({});
 
 useEffect(() => {
-  fetch("http://localhost:8000/students/" + studentid)
+  fetch("http://localhost:8005/students/" + studentid)
     .then((res) => res.json())
     .then((data) => setStudentData(data))
     .catch((err) => console.log(err.message));
