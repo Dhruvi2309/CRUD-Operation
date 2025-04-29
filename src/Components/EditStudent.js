@@ -13,7 +13,7 @@ function EditStudent() {
   // const [studentData, setStudentData] = useState({});
 
 useEffect(() => {
-  fetch("http://localhost:8005/students/" + studentid)
+  fetch("http://localhost:8010/students/" + studentid)
     .then((res) => res.json())
     .then((data) => {
             setId(data.id);
@@ -35,7 +35,7 @@ const handleSubmit = (e) => {
       const studentData = { id, name, place, phoneno };
       console.log(studentData);
       
-      fetch('http://localhost:8005/students/' + studentid, {
+      fetch('http://localhost:8010/students/' + studentid, {
           method: 'PUT', 
           headers: {
               "Content-Type": "application/json"
